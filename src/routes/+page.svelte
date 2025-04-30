@@ -1,26 +1,24 @@
-<script>
-	import { ArrowUpAZ, MenuIcon, Music2Icon } from 'lucide-svelte';
-	import { routes } from '$lib/constants';
+<script lang="ts">
+	import AuthModal from '$lib/components/shared/auth/auth-modal.svelte';
+	import Downloader from '$lib/components/shared/home-page/Downloader.svelte';
+	import Footer from '$lib/components/shared/home-page/Footer.svelte';
+	import Header from '$lib/components/shared/home-page/Header.svelte';
+	import MainContent from '$lib/components/shared/home-page/MainContent.svelte';
+	let showAuthModal = false;
+	const toggleAuthModal = () => {
+		showAuthModal = !showAuthModal;
+	};
 </script>
 
-<header
-	class="flex min-h-[4vh] min-w-full items-center justify-center bg-orange-500 text-center text-xl"
->
-	<a href="/" class="flex underline">New version RTaks...<ArrowUpAZ /></a>
-</header>
-<header
-	class="fixed flex min-h-[9vh] min-w-full border-b-2 border-t-2 border-gray-500 bg-gray-800 px-[35vh]"
->
-	<div class=" flex min-w-full items-center justify-between bg-red-600 px-4 text-xl">
-		<div class="flex gap-10 pl-5">
-			<MenuIcon />
-			<Music2Icon />
-		</div>
-		<div class="flex gap-5">
-			{#each routes as route}
-				<a href={route.path}>{route.name}</a>
-			{/each}
-		</div>
-	</div>
-</header>
-<div class="min-h-full bg-gray-800"></div>
+<svelte:head>
+	<title>RTask | Get Started</title>
+	<meta name="description" content="Boost your productivity with RTask" />
+</svelte:head>
+
+<div class="flex min-h-screen flex-col bg-gray-900 text-gray-100">
+	<Header toggleAuthModal={() => toggleAuthModal()} />
+	<MainContent toggleAuthModal={() => toggleAuthModal()} />
+	<Downloader />
+	<Footer />
+	<AuthModal {showAuthModal} toggleAuthModal={() => toggleAuthModal()} />
+</div>
