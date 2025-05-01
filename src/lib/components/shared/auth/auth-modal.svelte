@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
+	import RegisterForm from './register-form.svelte';
+	import LoginForm from './login-form.svelte';
 	export let showAuthModal: boolean;
 	export let toggleAuthModal: () => void;
 
@@ -44,57 +46,9 @@
 
 			<div class="space-y-4">
 				{#if !isLoginView}
-					<div>
-						<label for="username" class="mb-1 block text-sm font-medium">Username</label>
-						<input
-							type="text"
-							id="username"
-							class="w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
-							placeholder="Choose a username"
-						/>
-					</div>
+					<RegisterForm />
 				{/if}
-
-				<div>
-					<label for="email" class="mb-1 block text-sm font-medium">Email</label>
-					<input
-						type="email"
-						id="email"
-						class="w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
-						placeholder="your@email.com"
-					/>
-				</div>
-
-				<div>
-					<label for="password" class="mb-1 block text-sm font-medium">Password</label>
-					<input
-						type="password"
-						id="password"
-						class="w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
-						placeholder="••••••••"
-					/>
-				</div>
-
-				{#if !isLoginView}
-					<div>
-						<label for="confirm-password" class="mb-1 block text-sm font-medium"
-							>Confirm Password</label
-						>
-						<input
-							type="password"
-							id="confirm-password"
-							class="w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
-							placeholder="••••••••"
-						/>
-					</div>
-				{/if}
-
-				<button
-					class="w-full rounded-md bg-green-600 px-4 py-2 text-white transition duration-200 hover:bg-green-700"
-				>
-					{isLoginView ? 'Sign In' : 'Sign Up'}
-				</button>
-
+				{#if isLoginView}<LoginForm />{/if}
 				<div class="text-center text-sm text-gray-400">
 					{isLoginView ? "Don't have an account?" : 'Already have an account?'}
 					<button on:click={switchView} class="ml-1 text-green-500 hover:underline">
