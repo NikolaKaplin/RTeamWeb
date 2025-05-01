@@ -1,6 +1,6 @@
 <script>
 	import { SocialLinks } from '$lib/constants';
-	import FaIcon from '../../icons/Fa-icon.svelte';
+	import FaIcon from '../../icons/fa-icon.svelte';
 </script>
 
 <footer class="py-8 text-gray-300">

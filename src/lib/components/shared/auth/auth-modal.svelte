@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import RegisterForm from './register-form.svelte';
 	import LoginForm from './login-form.svelte';
+	import RegisterForm from './register-form.svelte';
 	export let showAuthModal: boolean;
 	export let toggleAuthModal: () => void;
 

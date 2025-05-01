@@ -4,11 +4,11 @@
 
 <form method="post" action="/auth/?/login" use:enhance>
 	<div>
-		<label for="email" class="mb-1 block text-sm font-medium">Email</label>
+		<label for="username" class="mb-1 block text-sm font-medium">Username</label>
 		<input
-			name="emai"
-			type="email"
-			id="email"
+			name="username"
+			type="text"
+			id="username"
 			class="w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
 			placeholder="your@email.com"
 		/>

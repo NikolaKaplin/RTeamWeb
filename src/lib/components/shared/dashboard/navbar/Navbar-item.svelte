@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { NavItem } from '$lib/constants';
 	import { cn } from '$lib/utils';
-	import LucideIcon from '../../icons/Lucide-icon.svelte';
+	import LucideIcon from '../../icons/lucide-icon.svelte';
 
 	const { item, isActive, currentPath } = $props<{
 		item: NavItem;

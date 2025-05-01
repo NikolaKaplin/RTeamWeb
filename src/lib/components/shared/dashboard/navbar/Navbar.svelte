@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { NavItems } from '$lib/constants';
-	import NavbarItem from './Navbar-item.svelte';
+	import NavbarItem from './navbar-item.svelte';
 	import { page } from '$app/stores';
+	import NavbarFooter from './navbar-footer.svelte';
 
-	let isMobileMenuOpen = $state(false);
+	let { isMobileMenuOpen }: { isMobileMenuOpen: boolean } = $props();
 	const pathName = $derived($page.url.pathname);
-	// Функция для определения активного элемента
+
 	const isItemActive = (itemPath: string) => {
 		if (itemPath === 'home') {
 			return pathName === '/dashboard';
@@ -39,5 +40,12 @@
 			{/each}
 		</nav>
 	</div>
-	<div class="border-t border-gray-700 p-4"></div>
+	<div class="border-t border-gray-700 p-4">
+		<NavbarFooter
+			handleLogout={() => {}}
+			confirmLogout={() => {}}
+			isLogoutDialogOpen={false}
+			setIsLogoutDialogOpen={() => {}}
+		/>
+	</div>
 </div>

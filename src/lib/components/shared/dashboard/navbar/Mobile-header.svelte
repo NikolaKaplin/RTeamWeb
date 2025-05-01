@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
 	import { Menu } from 'lucide-svelte';
+	let { showMobileMenu }: { showMobileMenu: () => void } = $props();
 </script>
 
 <header
@@ -47,7 +48,7 @@
 			Altergemu
 		</h1>
 	</a>
-	<div class="flex items-center">
+	<button onclick={showMobileMenu} class="flex items-center">
 		<Menu />
-	</div>
+	</button>
 </header>

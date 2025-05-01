@@ -1,13 +1,25 @@
 <script lang="ts">
-	import Footer from '$lib/components/shared/dashboard/navbar/Footer.svelte';
-	import MobileHeader from '$lib/components/shared/dashboard/navbar/Mobile-header.svelte';
-	import Navbar from '$lib/components/shared/dashboard/navbar/Navbar.svelte';
-	let { children } = $props();
+	import Footer from '$lib/components/shared/dashboard/navbar/footer.svelte';
+	import MobileHeader from '$lib/components/shared/dashboard/navbar/mobile-header.svelte';
+	import Navbar from '$lib/components/shared/dashboard/navbar/navbar.svelte';
+	import { setContext, type Snippet } from 'svelte';
+	import type { LayoutServerData } from './$types';
+	let { data, children }: { data: LayoutServerData; children: Snippet } = $props();
+
+	export interface ContextUser {
+		id: string;
+		username: string;
+	}
+	let isMobileMenuOpen = $state(false);
+
+	let user = $state(data.user);
+	setContext('user-context', user);
+	const handleMobileMenu = () => (isMobileMenuOpen = !isMobileMenuOpen);
 </script>
 
 <div class="flex h-screen flex-col overflow-hidden lg:flex-row">
-	<MobileHeader />
-	<Navbar />
+	<MobileHeader showMobileMenu={handleMobileMenu} />
+	<Navbar {isMobileMenuOpen} />
 	<div class="flex-1 overflow-hidden">
 		<div
 			class="h-screen overflow-y-auto bg-gradient-to-b from-gray-900 to-gray-800 text-gray-900 dark:text-gray-100"

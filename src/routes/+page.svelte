@@ -1,11 +1,17 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import AuthModal from '$lib/components/shared/auth/auth-modal.svelte';
 	import Downloader from '$lib/components/shared/home-page/Downloader.svelte';
 	import Footer from '$lib/components/shared/home-page/Footer.svelte';
 	import Header from '$lib/components/shared/home-page/Header.svelte';
 	import MainContent from '$lib/components/shared/home-page/MainContent.svelte';
-	let showAuthModal = false;
+	import type { PageServerData } from './$types';
+
+	let { data }: { data: PageServerData } = $props();
+	let showAuthModal = $state(false);
+
 	const toggleAuthModal = () => {
+		if (data.user) return goto('/dashboard');
 		showAuthModal = !showAuthModal;
 	};
 </script>
