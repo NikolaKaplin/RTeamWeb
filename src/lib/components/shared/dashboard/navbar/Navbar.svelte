@@ -1,13 +1,23 @@
 <script lang="ts">
 	import { NavItems } from '$lib/constants';
 	import NavbarItem from './Navbar-item.svelte';
-	let isMobileMenuOpen = false;
+	import { page } from '$app/stores';
+
+	let isMobileMenuOpen = $state(false);
+	const pathName = $derived($page.url.pathname);
+	// Функция для определения активного элемента
+	const isItemActive = (itemPath: string) => {
+		if (itemPath === 'home') {
+			return pathName === '/dashboard';
+		}
+		return pathName.startsWith(`/dashboard/${itemPath}`);
+	};
 </script>
 
 <div
-	class={`fixed inset-y-0 left-0 transform rounded-r-3xl ${
+	class={`fixed inset-y-0 left-0 z-30 flex w-64 flex-col rounded-r-3xl bg-gray-800 text-white shadow-lg transition-transform duration-300 ease-in-out lg:translate-x-0 ${
 		isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-	} z-30 flex w-64 flex-col bg-gray-800 text-white shadow-lg transition duration-300 ease-in-out lg:translate-x-0`}
+	}`}
 >
 	<div
 		class="scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 flex-grow overflow-y-auto"
@@ -22,9 +32,10 @@
 			</div>
 			<div class="mt-2 text-sm text-gray-400">Your description</div>
 		</div>
+
 		<nav class="gap-2 space-y-1 px-3 py-2">
-			{#each NavItems as NavItem}
-				<NavbarItem item={NavItem} isActive={false} handleClick={() => {}} />
+			{#each NavItems as item}
+				<NavbarItem {item} isActive={isItemActive(item.path)} currentPath={pathName} />
 			{/each}
 		</nav>
 	</div>

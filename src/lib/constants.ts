@@ -1,5 +1,4 @@
 import { faDiscord, faYoutube, type IconDefinition } from '@fortawesome/free-brands-svg-icons';
-import { faTelegram } from '@fortawesome/free-brands-svg-icons/faTelegram';
 import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons/faTelegramPlane';
 import {
 	FolderKanban,
@@ -70,7 +69,7 @@ export const SocialLinks: SocialLink[] = [
 	},
 	{
 		name: 'discord',
-		url: 'https://t.me/altergemu',
+		url: 'https://discord.gg/wsHUFYTh',
 		icon: faDiscord,
 		color: '#939BF9'
 	},
