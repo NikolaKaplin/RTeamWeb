@@ -18,21 +18,17 @@
 	import type { ContextUser } from '../../../../../routes/dashboard/+layout.svelte';
 	const userContext = getContext<ContextUser>('user-context');
 	const user = $derived(userContext);
-	let {
-		isLogoutDialogOpen,
-		setIsLogoutDialogOpen,
-		handleLogout,
-		confirmLogout
-	}: {
-		isLogoutDialogOpen: boolean;
-		setIsLogoutDialogOpen: () => void;
-		handleLogout: () => void;
-		confirmLogout: () => void;
-	} = $props();
+	let isLogoutDialogOpen = $state(false);
+	const handleLogoutDialogClose = () => {
+		isLogoutDialogOpen = false;
+	};
+	const handleLogout = () => {
+		isLogoutDialogOpen = true;
+	};
 </script>
 
 <div class="flex items-center justify-between">
-	<a href="/profile" class="group flex items-center space-x-3">
+	<a href="/dashboard/profile" class="group flex items-center space-x-3">
 		<Avatar
 			class="h-10 w-10 rounded-full ring-2 ring-indigo-400 transition-all duration-300 group-hover:ring-indigo-300"
 		>
@@ -48,7 +44,7 @@
 			{user.username}
 		</span>
 	</a>
-	<AlertDialog open={isLogoutDialogOpen} onOpenChange={setIsLogoutDialogOpen}>
+	<AlertDialog open={isLogoutDialogOpen} onOpenChange={() => isLogoutDialogOpen == false}>
 		<AlertDialogTrigger asChild>
 			<Button
 				variant="ghost"
@@ -71,17 +67,22 @@
 			</AlertDialogHeader>
 			<AlertDialogFooter>
 				<AlertDialogCancel
+					onclick={handleLogoutDialogClose}
 					class="border-gray-600 bg-gray-700 text-green-500 hover:bg-gray-600 hover:text-green-400"
 				>
 					<X class="mr-2 h-4 w-4" />
 					Cancel
 				</AlertDialogCancel>
 				<AlertDialogAction
-					onclick={confirmLogout}
+					onclick={handleLogoutDialogClose}
 					class="bg-green-600 text-gray-100 hover:bg-green-700"
 				>
-					<DoorOpen class="mr-2 h-4 w-4" />
-					Log out
+					<form method="post" action="/dashboard/?/logout">
+						<button class="flex">
+							<DoorOpen class="mr-2 h-4 w-4" />
+							Log out
+						</button>
+					</form>
 				</AlertDialogAction>
 			</AlertDialogFooter>
 		</AlertDialogContent>

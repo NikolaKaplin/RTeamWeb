@@ -22,12 +22,10 @@
 	<Navbar {isMobileMenuOpen} />
 	<div class="flex-1 overflow-hidden">
 		<div
-			class="h-screen overflow-y-auto bg-gradient-to-b from-gray-900 to-gray-800 text-gray-900 dark:text-gray-100"
+			class="min-h-screen overflow-y-auto bg-gradient-to-b from-gray-900 to-gray-800 text-gray-900 dark:text-gray-100"
 		>
-			<div class=" flex min-h-screen flex-col pt-20 lg:pl-64 lg:pt-4">
-				<div class="flex-grow">
-					{@render children()}
-				</div>
+			<div class=" flex h-screen flex-col pt-20 lg:pl-64 lg:pt-4">
+				<div class="flex-grow">{@render children()}</div>
 				<Footer />
 			</div>
 		</div>

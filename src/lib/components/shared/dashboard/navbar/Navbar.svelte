@@ -41,11 +41,6 @@
 		</nav>
 	</div>
 	<div class="border-t border-gray-700 p-4">
-		<NavbarFooter
-			handleLogout={() => {}}
-			confirmLogout={() => {}}
-			isLogoutDialogOpen={false}
-			setIsLogoutDialogOpen={() => {}}
-		/>
+		<NavbarFooter />
 	</div>
 </div>
