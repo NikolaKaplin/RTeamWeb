@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml">
+      <package file="$PROJECT_DIR$">
+        <enabledFeature name="default" />
+      </package>
+    </cargoProject>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13009885-be17-4f1f-a758-d52aa0ce06b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/RTeam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.npmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bun.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drizzle.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/app.pcss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/hooks.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lang/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lang/ru.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/auth/auth-modal.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/auth/login-form.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/auth/register-form.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/dashboard/navbar/Footer.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/dashboard/navbar/Mobile-header.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/dashboard/navbar/Navbar-item.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/dashboard/navbar/Navbar.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/dashboard/navbar/navbar-footer.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/home-page/Downloader.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/home-page/Footer.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/home-page/Header.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/home-page/MainContent.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/icons/Fa-icon.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/shared/icons/Lucide-icon.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/alert-dialog-action.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/alert-dialog-cancel.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/alert-dialog-content.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/alert-dialog-description.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/alert-dialog-footer.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/alert-dialog-header.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/alert-dialog-overlay.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/alert-dialog-portal.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/alert-dialog-title.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/alert-dialog/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/avatar/avatar-fallback.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/avatar/avatar-image.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/avatar/avatar.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/avatar/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/button/button.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/components/ui/button/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/constants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/server/auth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/server/db/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/server/db/schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/+layout.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/+page.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/api/v1/roll/+server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/auth/+page.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/+layout.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/+layout.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/+page.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/admin/+layout.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/admin/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/profile/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/projects/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/statistics/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/tasks/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/dashboard/team/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/demo/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/demo/lucia/+page.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/demo/lucia/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/demo/lucia/login/+page.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routes/demo/lucia/login/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../svelte.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vite.config.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="YWz5Ux5s" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2wrgITbfr1EFCc007aO92kLeXIU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/kapli/My_projects/JS_TS/RTeam/backend",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.first.attach.projects": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Cargo.Run backend">
+    <configuration name="Run backend" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="buildProfileId" value="dev" />
+      <option name="command" value="run --package backend --bin backend" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test backend" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="test --workspace" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13009885-be17-4f1f-a758-d52aa0ce06b5" name="Changes" comment="" />
+      <created>1746805026655</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746805026655</updated>
+      <workItem from="1746805027727" duration="48000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
